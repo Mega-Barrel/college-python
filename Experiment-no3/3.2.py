@@ -1,4 +1,4 @@
-# Write a program to implement inheritance and polimorphism with method overloading and method overwriding.
+# Write a program to implement inheritance and polimorphism with method overloading and method overriding.
 
 # 1. inheritance:
 class Person:
@@ -10,7 +10,7 @@ class Person:
         print("Name is", self.name)
         print("Age is", self.age)
         print("Graduation year is", self.graduationyear)     
-# Creating a child class which inherits properties of parent class.
+    # Creating a child class which inherits properties of parent class.
 class Student(Person):
   def __init__(self, name, age, year):
     super().__init__(name, age)
@@ -20,6 +20,7 @@ p1 = Student("Saurabh", 18, 2022)
 p1.printname()
 
 print('------------/------------')
+
 
 # 2. polimorphism:
 class India(): 
@@ -45,17 +46,33 @@ for country in (obj_ind, obj_usa):
 
 print('------------/------------')
 
+
 # 3. method overloading:
 class MO:
-    def add(self,x,y):
-        self.x = x
-        self.y = y
-        print(x+y)
-    def add(self,x,y,z):
-        self.x = x
-        self.y = y
-        self.z = z
-        print(x+y+z)
+    def add(self, a = None, b = None, c = None):
+        s = 0
+        if a!=None and b!=None and c!=None:
+            s = a + b + c
+        elif a!=None and b!=None:
+            s = a+b
+        else:
+            s = a
+        return s
 m = MO()
-m.add(23,23,11)
-m.add(32,22)
+print('Addition is:' ,m.add(1,2,2))
+print('Addition is:' ,m.add(1,2))
+
+print('------------/------------')
+
+
+# 4. method overriding:
+class A:
+    def show(self):
+        print('In A')
+
+class B:
+    def show(self):
+        print('In B')
+
+a1 = B()
+a1.show()
