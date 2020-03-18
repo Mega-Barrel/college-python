@@ -1,4 +1,4 @@
-# Write a aprogram to implement operator overloading and operator overriding 
+# Write a aprogram to implement operator overloading. 
 
 # 1. operator overloading:
 class Student:
@@ -19,6 +19,3 @@ s3 = s1 + s2
 print(s3.m1, ':', s3.m2)
 
 print('------------/------------')
-
-# 2. operator overriding
-
