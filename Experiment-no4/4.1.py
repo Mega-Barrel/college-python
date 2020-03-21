@@ -6,8 +6,10 @@ try:
     for i in file:
         print(file.read())
 
+# You can use IOException also
 except Exception as e:
     print('Something went wrong \n', e)
 
 finally:
     file.close()
+    
