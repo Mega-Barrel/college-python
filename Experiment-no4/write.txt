@@ -1,0 +1,2 @@
+Hello this file is created using file handling using python.Hello this file is created using file handling using python.
+This line is appended to write.txt file
