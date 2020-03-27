@@ -14,7 +14,7 @@ mydb = mysql.connector.connect(host="localhost", user="root", passwd = "Saurabh2
 
 mycursor = mydb.cursor()
 
-mycursor.execute("CREATE TABLE customer_info(customer_id INT AUTO_INCREMENT PRIMARY KEY, customer_name VARCHAR(50), customer_address VARCHAR(50))")
+mycursor.execute("CREATE TABLE customer_information(customer_id INT, customer_name VARCHAR(50), customer_address VARCHAR(50))")
 
 mydb.commit()
 
