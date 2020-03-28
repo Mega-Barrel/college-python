@@ -18,7 +18,7 @@ def insertDataIntoTable(customer_id, customer_name, customer_address):
     mydb.close()
     # print('Data inserted successfully')
 
-insertDataIntoTable(1, 'Saurabh', 'Vasai')
+insertDataIntoTable(1, 'Saurabh', 'Vasai') # After update operation the address gets changed to borivali
 insertDataIntoTable(2, 'Nilesh', 'Borivali')
 insertDataIntoTable(3, 'Atharva', 'Andheri')
 insertDataIntoTable(4, 'Chaitanya', 'Dadar')
